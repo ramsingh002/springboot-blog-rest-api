@@ -48,6 +48,7 @@ public class PostController {
 
     @GetMapping
     public ResponseEntity<List<PostDto>> getAllPosts(){
+		System.out.println("Post-Controller : getAllPosts");
         return new ResponseEntity<>(
                 postService.getAllPosts(),
                 HttpStatus.OK
